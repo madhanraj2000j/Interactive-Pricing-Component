@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+  <title>interactive-pricing-component</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./styles/normalize.css" />
+  <link rel="stylesheet" href="./styles/style.css" />
+</head>
+
+<body>
+  <div class="head-container">
+    <h1 class="title">Simple, traffic-based pricing</h1>
+    <div class="para">
+      <p class="signup-para">Sign-up for our 30-day trial.</p>
+      <p class="credit-para">No credit card required.</p>
+    </div>
+  </div>
+  <main class="card-container">
+    <div class="UI-container">
+      <div class="number-container">
+        <span class="page-views"><span id="views"> 100K</span> PAGEVIEWS</span>
+        <span class="dollar"><span class="num"> $ <span id="desk-dollar">16</span>.00</span>
+          /month</span>
+      </div>
+      <div class="range-container">
+        <input type="range" id="price-slider" class="range-input" min="0" max="4"/>
+      </div>
+    </div>
+
+    <div class="billing-container">
+      <div class="monthly-billing">
+        <span class="billing"> Monthly Billing</span>
+        <!-- TOGGLE UI -->
+        <label class="switch">
+          <input type="checkbox" name="billing" id="billing" />
+          <span class="toggle-slider"></span>
+        </label>
+      </div>
+      <!-- UI FOR DESKTOP -->
+      <div class="hidden-yearly-billing">
+        <p class="billing">Yearly Billing</p>
+        <p class="discount">25% <span class="hidden">discount</span> </p>
+      </div>
+    </div>
+    <hr />
+    <div class="footer-container">
+      <div class="list-containers-all">
+        <div class="list-container">
+          <img src="./images/icon-check.svg" alt="" class="tick-icon" />
+          <p class="list-items">Unlimited websites</p>
+        </div>
+        <div class="list-container">
+          <img src="./images/icon-check.svg" alt="" class="tick-icon" />
+          <p class="list-items">100% data ownership</p>
+        </div>
+        <div class="list-container">
+          <img src="./images/icon-check.svg" alt="" class="tick-icon" />
+          <p class="list-items">Email reports</p>
+        </div>
+      </div>
+      <div class="trail-container">
+        <button class="btn-trail">Start my trial</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="./script/script.js"></script>
+</body>
+
+</html>
